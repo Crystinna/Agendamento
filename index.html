@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas - Tarot Cigano</title>
+    <style>
+        body {
+            background-color: #f8f0e3;
+            font-family: 'Georgia', serif;
+            color: #3e2723;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-y: scroll; /* Adiciona a barra de rolagem */
+        }
+        header {
+            background-image: url('https://i.imgur.com/SsLHJst.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100vh; /* Ajuste a altura para cobrir toda a tela */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px #000;
+            flex-direction: column; /* Permite organizar os elementos verticalmente */
+        }
+        header h1 {
+            font-size: 3em;
+        }
+        .arrow {
+            font-size: 5em; /* Aumenta o tamanho da seta */
+            margin-top: 20px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        .container {
+            padding: 20px;
+        }
+        .agendamento {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .whatsapp-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #fff; /* Cor branca para o texto */
+            background-color: #25d366; /* Cor verde para o fundo do botão */
+            font-size: 1.5em;
+            padding: 15px 30px;
+            border-radius: 30px; /* Bordas arredondadas para o botão */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adiciona sombra ao botão */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição ao passar o mouse */
+        }
+        .whatsapp-link:hover {
+            background-color: #1ebe56; /* Cor mais escura ao passar o mouse */
+            transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+        }
+        .whatsapp-link img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .catalogo-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #128C7E;
+            font-size: 1.5em;
+            padding: 15px 30px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .catalogo-link:hover {
+            background-color: #0d6d56;
+            transform: scale(1.05);
+        }
+        .catalogo-link img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consultas de Tarot Cigano</h1>
+        <div class="arrow">⬇️</div> <!-- Seta maior apontando para baixo -->
+    </header>
+
+    <div class="container">
+        <p>Trabalhamos somente com agendamento!</p>
+        <p class="agendamento">Entre em contato para marcar sua consulta:</p>
+
+        <a href="https://wa.me/559492240113" class="whatsapp-link">
+            <img src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png" alt="WhatsApp">
+            Fale conosco pelo WhatsApp
+        </a>
+
+        <a href="https://wa.me/c/559492240113" class="catalogo-link">
+            <img src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone.png" alt="Catálogo">
+            Acesse nosso catálogo
+        </a>
+    </div>
+</body>
+</html>
